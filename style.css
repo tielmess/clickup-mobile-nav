@@ -8,6 +8,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(70,70,70);
 }
 *,
 *:before,
@@ -23,18 +24,37 @@ html {
   padding:0;
 }
 /* MENU BUTTON */
+#button-mount {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  margin: 0 auto 0.2em 0.2em;
+  width: 5.95em;
+  height: 3.5em;
+  padding-left: 0;
+  background-color: rgba(245,245,245,0.5);
+  border: 1px solid rgba(238,238,238, 0.6);
+  z-index: 8;
+
+}
 #menubtn {
   position: fixed;
   bottom: 0;
   display: block;
-  margin: 0 auto 12px;
-  padding: 12px 48px;
-  color: #fff;
-  background: rgba(37,183,168,1);
+  margin: 0 auto 0.35em 0.15em;
+  padding: 0;
+  width: 3.8em;
+  height: 2em;
   font: inherit;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: #fff;
+  text-align: center;  
+  text-transform: uppercase;
+  background: rgba(37,183,168,1);  
   cursor: pointer;
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -54,33 +74,28 @@ html {
 
 
 /* MENU */
-.mobmenu {
+#mobmenu {
   position: fixed;
   bottom: 0;
-  overflow-y: scroll;
+  margin: 0 auto;
+  background-color: rgb(70,70,70);
+  z-index: 5;
+  /*overflow-y: scroll; for testing only*/
 }
 
-.closed {
-  position: fixed;
+#mobmenu.closed {
   bottom: 0;
   width: 100%;
   height:0;
-  margin: 0 auto;
-  background-color: #464646;
   padding: 0;
-  border: 1px dotted #464646;
-  
+  border: 1px dotted rgb(70,70,70);  
       -webkit-transition: height 0.5s;
           transition: height 0.5s;
 }
 
 #mobmenu.opened {
-  position: fixed;
   bottom: 15px;
-  height: 300px;
-  background-color: #eeeeee;
-  z-index: 5;
-  overflow-y: scroll;
+  height: 280px;
     -webkit-transition: height 0.5s;
           transition: height 0.5s;
 }
@@ -113,7 +128,7 @@ html {
   text-decoration: none;
 }
 #mobmenu ul li:last-of-type {
-  height: 80px;
+  height: 100px;
 }
 #mobmenu ul li a {
   display: block;
