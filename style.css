@@ -94,8 +94,8 @@ html {
 }
 
 #mobmenu.opened {
-  bottom: 15px;
-  height: 280px;
+  bottom: 0;
+  width: 100%;
     -webkit-transition: height 0.5s;
           transition: height 0.5s;
 }
